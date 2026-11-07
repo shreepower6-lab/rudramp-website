@@ -7,9 +7,9 @@
 <title>Rudra Enterprises and Services – Burhanpur</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap">
 <style>
-:root{--saf:#E8700A;--saf-d:#B85500;--ink:#2A1F16;--paper:#FFF8EE;--card:#FFFFFF;--line:#EAD9C2;--mute:#6B5B4B;--tint:#FDE9CF;
+:root{--saf:#FFC20E;--saf-d:#0B5CAD;--ink:#0B2A4A;--paper:#F4F8FC;--card:#FFFFFF;--line:#CFE0F2;--mute:#4A5E73;--tint:#E4EEF8;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media(prefers-color-scheme:dark){:root{--ink:#F7EBDA;--paper:#1C1510;--card:#271D15;--line:#4A3A2A;--mute:#CDBBA5;--tint:#2F2116;--saf:#F28A2E;--saf-d:#F5A04F;color-scheme:dark}}
+@media(prefers-color-scheme:dark){:root{--ink:#EAF2FB;--paper:#0C1624;--card:#13233A;--line:#26405F;--mute:#A9BDD3;--tint:#112036;--saf:#FFC83D;--saf-d:#FFD25E;color-scheme:dark}}
 html{scroll-padding-top:70px;scroll-behavior:smooth}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 Mukta,"Noto Sans Devanagari",system-ui,sans-serif}
@@ -19,19 +19,19 @@ a{color:inherit}
 header{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--saf)}
 header .wrap{display:flex;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap}
 .brand{font-weight:800;font-size:18px;display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
-.mark{width:34px;height:34px;background:var(--saf);color:#fff;display:grid;place-items:center;font-weight:800;font-size:15px;border-radius:4px}
+.mark{width:34px;height:34px;background:var(--saf);color:#0B2A4A;display:grid;place-items:center;font-weight:800;font-size:15px;border-radius:4px}
 nav{display:flex;gap:14px;flex-wrap:wrap;font-size:15px;font-weight:600}
 nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--saf-d)}
 button,.btn{font:600 16px Mukta,"Noto Sans Devanagari",sans-serif;cursor:pointer}
 .lang{border:2px solid var(--saf);background:none;color:var(--ink);padding:2px 12px;border-radius:4px}
-.btn{display:inline-block;background:var(--saf);color:#1C1510;border:0;padding:10px 22px;border-radius:4px;text-decoration:none;font-weight:800}
+.btn{display:inline-block;background:var(--saf);color:#0B2A4A;border:0;padding:10px 22px;border-radius:4px;text-decoration:none;font-weight:800}
 .btn.alt{background:none;color:var(--ink);border:2px solid var(--ink)}
 :focus-visible{outline:3px solid var(--ink);outline-offset:2px}
-.hero{background:#2A1F16;color:#FFF8EE;position:relative;overflow:hidden}
+.hero{background:#0B2A4A;color:#F4F8FC;position:relative;overflow:hidden}
 .hero .wrap{padding-top:56px;padding-bottom:0;position:relative;z-index:1}
 .hero h1{font-size:clamp(34px,6vw,60px);line-height:1.1;font-weight:800;margin:0 0 14px;max-width:16em}
-.hero p{max-width:34em;font-size:19px;color:#EAD9C2;margin:0 0 24px}
-.hero .btn.alt{color:#FFF8EE;border-color:#FFF8EE}
+.hero p{max-width:34em;font-size:19px;color:#CFE0F2;margin:0 0 24px}
+.hero .btn.alt{color:#F4F8FC;border-color:#F4F8FC}
 .line{display:block;width:100%;height:150px;margin-top:20px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border-bottom:1px solid var(--line);background:var(--card)}
 .stats div{padding:18px 20px;border-right:1px solid var(--line)}
@@ -52,20 +52,20 @@ h2{font-size:clamp(26px,4vw,36px);line-height:1.2;margin:0 0 8px;font-weight:800
 @media(max-width:600px){.owner{grid-template-columns:1fr}}
 .tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
 .tabs button{background:var(--card);color:var(--ink);border:2px solid var(--line);padding:6px 16px;border-radius:4px}
-.tabs button[aria-pressed=true]{border-color:var(--saf);background:var(--saf);color:#1C1510;font-weight:800}
+.tabs button[aria-pressed=true]{border-color:var(--saf);background:var(--saf);color:#0B2A4A;font-weight:800}
 form{background:var(--card);border:1px solid var(--line);padding:20px;border-radius:4px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
 label{display:block;font-size:14px;font-weight:600;color:var(--mute)}
 input,select,textarea{width:100%;font:400 16px Mukta,"Noto Sans Devanagari",sans-serif;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink)}
 .full{grid-column:1/-1}
 .ok{display:none;background:var(--tint);border-left:5px solid var(--saf);padding:12px 16px;margin-top:12px;border-radius:4px}
 .note{font-size:14px;color:var(--mute);margin-top:8px}
-footer{background:#2A1F16;color:#EAD9C2;padding:36px 0 90px;font-size:15px}
-footer a{color:#FFF8EE}
+footer{background:#0B2A4A;color:#CFE0F2;padding:36px 0 90px;font-size:15px}
+footer a{color:#F4F8FC}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
 footer h4{margin:0 0 6px;color:var(--saf);font-size:17px}
 #ck{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--card);border:2px solid var(--saf);padding:12px 16px;border-radius:4px;z-index:9;display:flex;gap:12px;align-items:center;flex-wrap:wrap;max-width:720px;margin:0 auto;font-size:15px}
 #ck span{flex:1 1 260px}
-.wa{position:fixed;right:16px;bottom:90px;z-index:8;background:#1FA855;color:#fff;padding:10px 16px;border-radius:30px;text-decoration:none;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.wa{position:fixed;right:16px;bottom:90px;z-index:8;background:#128A43;color:#fff;padding:10px 16px;border-radius:30px;text-decoration:none;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.3)}
 @media(max-width:600px){
 body{font-size:16px}
 header .wrap{gap:6px;padding-top:8px;padding-bottom:6px}
@@ -79,8 +79,8 @@ section{padding:38px 0}
 .wa{bottom:110px;right:10px;padding:6px 12px;font-size:14px}
 .line{height:100px}
 }
-#mb{display:none;background:var(--saf);color:#1C1510;border:0;padding:6px 14px;border-radius:4px;font-weight:800}
-.hero :focus-visible,footer :focus-visible{outline-color:#FFF8EE}
+#mb{display:none;background:var(--saf);color:#0B2A4A;border:0;padding:6px 14px;border-radius:4px;font-weight:800}
+.hero :focus-visible,footer :focus-visible{outline-color:#F4F8FC}
 @media(max-width:760px){#mb{display:inline-block}
 .brand{flex:1;min-width:0}
 nav{display:none;order:3;width:100%;flex-direction:column;gap:0;border-top:1px solid var(--line);margin-top:4px}
@@ -111,9 +111,9 @@ nav a{padding:12px 4px;border-bottom:1px solid var(--line);font-size:17px;color:
 <a class="btn" href="#quote"><span class="en">Request a quotation</span><span class="hi">कोटेशन माँगें</span></a>
 <a class="btn alt" href="https://wa.me/919669961084"><span class="en">Chat on WhatsApp</span><span class="hi">WhatsApp पर बात करें</span></a>
 <svg class="line" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true">
-<g stroke="#E8700A" fill="none" stroke-width="2.5"><path d="M0 40 Q125 85 250 40 T500 40 T750 40 T1000 40"/><path d="M0 62 Q125 107 250 62 T500 62 T750 62 T1000 62" opacity=".7"/><path d="M0 84 Q125 129 250 84 T500 84 T750 84 T1000 84" opacity=".45"/></g>
-<g stroke="#EAD9C2" stroke-width="6" stroke-linecap="square"><path d="M250 20V150M500 20V150M750 20V150M0 20V150M1000 20V150"/></g>
-<g stroke="#EAD9C2" stroke-width="5"><path d="M228 40H272M478 40H522M728 40H772"/></g>
+<g stroke="#FFC20E" fill="none" stroke-width="2.5"><path d="M0 40 Q125 85 250 40 T500 40 T750 40 T1000 40"/><path d="M0 62 Q125 107 250 62 T500 62 T750 62 T1000 62" opacity=".7"/><path d="M0 84 Q125 129 250 84 T500 84 T750 84 T1000 84" opacity=".45"/></g>
+<g stroke="#CFE0F2" stroke-width="6" stroke-linecap="square"><path d="M250 20V150M500 20V150M750 20V150M0 20V150M1000 20V150"/></g>
+<g stroke="#CFE0F2" stroke-width="5"><path d="M228 40H272M478 40H522M728 40H772"/></g>
 </svg>
 </div></div>
 
