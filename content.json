@@ -1,0 +1,101 @@
+{
+ "hero": {
+  "title_en": "From the first pole to the live line.",
+  "title_hi": "पहले पोल से लेकर चालू लाइन तक।",
+  "text_en": "11 kV and 33 kV line work, transformers up to 5 MVA, solar installation and skilled labour across Madhya Pradesh. Our aim is to deliver on time and safely.",
+  "text_hi": "पूरे मध्य प्रदेश में 11 kV और 33 kV लाइन का काम, 5 MVA तक के ट्रांसफार्मर, सोलर इंस्टॉलेशन और कुशल लेबर। हमारा उद्देश्य समय पर और सुरक्षित काम देना है।"
+ },
+ "stats": [
+  {
+   "value": "4+",
+   "label_en": "years of experience",
+   "label_hi": "साल का अनुभव"
+  },
+  {
+   "value": "60 km",
+   "label_en": "11 kV and 33 kV lines built",
+   "label_hi": "11 kV और 33 kV लाइन"
+  },
+  {
+   "value": "50",
+   "label_en": "transformers installed",
+   "label_hi": "ट्रांसफार्मर लगाए"
+  },
+  {
+   "value": "53",
+   "label_en": "engineers, supervisors and workers",
+   "label_hi": "इंजीनियर, सुपरवाइज़र और कारीगर"
+  }
+ ],
+ "services": [
+  {
+   "title_en": "11 kV line work",
+   "title_hi": "11 kV लाइन का काम",
+   "text_en": "Pole erection, line laying, testing and charging, with DTR installation, for the full job.",
+   "text_hi": "पोल लगाना, लाइन बिछाना, टेस्टिंग और लाइन चालू करना, DTR लगाने सहित पूरा काम।"
+  },
+  {
+   "title_en": "Transformers and DTR",
+   "title_hi": "ट्रांसफार्मर और DTR",
+   "text_en": "25, 63, 100, 200 and 325 kVA, and up to 5 MVA.",
+   "text_hi": "25, 63, 100, 200 और 325 kVA, और 5 MVA तक।"
+  },
+  {
+   "title_en": "Labour contractor",
+   "title_hi": "लेबर कॉन्ट्रैक्टर",
+   "text_en": "Work for the electricity department and contractor companies on RDSS and other schemes of the Purv Kshetra distribution company.",
+   "text_hi": "बिजली विभाग और ठेकेदार कंपनियों के लिए RDSS और पूर्व क्षेत्र विद्युत वितरण कंपनी की दूसरी योजनाओं का काम।"
+  },
+  {
+   "title_en": "Labour supply",
+   "title_hi": "लेबर सप्लाई",
+   "text_en": "Skilled and unskilled workers: linemen, helpers and electricians, 50 to 100 at a time.",
+   "text_hi": "स्किल्ड और अनस्किल्ड लेबर: लाइनमैन, हेल्पर, इलेक्ट्रीशियन, एक बार में 50 से 100 तक।"
+  },
+  {
+   "title_en": "Solar installation",
+   "title_hi": "सोलर इंस्टॉलेशन",
+   "text_en": "Systems from 3 kW to 50 kW for homes, farms and businesses.",
+   "text_hi": "घर, खेत और व्यवसाय के लिए 3 kW से 50 kW तक के सिस्टम।"
+  },
+  {
+   "title_en": "Farmers and individuals",
+   "title_hi": "किसान और निजी उपभोक्ता",
+   "text_en": "Two poles, a line shift or a transformer on your own farm, plus maintenance.",
+   "text_hi": "दो पोल, लाइन शिफ्टिंग या अपने खेत में ट्रांसफार्मर, और मेंटेनेंस।"
+  }
+ ],
+ "projects": [
+  {
+   "year": "2022-23\n2024",
+   "title_en": "DDUGJY (Deen Dayal Upadhyaya Gram Jyoti Yojana)",
+   "title_hi": "DDUGJY (दीनदयाल उपाध्याय ग्राम ज्योति योजना)",
+   "text_en": "Umaria, Shahdol and Anuppur districts: 50 km of 11 kV line, 10 km of 33 kV line, 50 transformers and 2,000 meters installed.",
+   "text_hi": "उमरिया, शहडोल और अनूपपुर जिले: 50 किमी 11 kV लाइन, 10 किमी 33 kV लाइन, 50 ट्रांसफार्मर और 2,000 मीटर लगाए गए।"
+  },
+  {
+   "year": "2025",
+   "title_en": "RDSS project, Burhanpur",
+   "title_hi": "RDSS प्रोजेक्ट, बुरहानपुर",
+   "text_en": "Erection, testing and commissioning of 11 kV and 33 kV material for Vindhya Telelinks Limited.",
+   "text_hi": "Vindhya Telelinks Limited के लिए 11 kV और 33 kV सामग्री का इरेक्शन, टेस्टिंग और कमीशनिंग।"
+  },
+  {
+   "year": "3–10 kW",
+   "title_en": "Solar installations",
+   "title_hi": "सोलर इंस्टॉलेशन",
+   "text_en": "About 15 customers in Umaria, Burhanpur and Khandwa districts.",
+   "text_hi": "उमरिया, बुरहानपुर और खंडवा जिलों में लगभग 15 ग्राहक।"
+  }
+ ],
+ "gallery": [],
+ "owner": {
+  "name_en": "Rahul Upadhyay",
+  "name_hi": "राहुल उपाध्याय",
+  "role_en": "Partner and CEO",
+  "role_hi": "पार्टनर एवं सीईओ",
+  "bio_en": "Rahul Upadhyay holds an MBA in Finance and has 7 years of experience in electrical contracting. Under his leadership the company has worked on government schemes across Madhya Pradesh. “Our aim is to deliver on time and safely.”",
+  "bio_hi": "राहुल उपाध्याय ने एमबीए (फाइनेंस) किया है और उन्हें बिजली ठेकेदारी में 7 साल का अनुभव है। उनके नेतृत्व में कंपनी ने पूरे मध्य प्रदेश में सरकारी योजनाओं पर काम किया है। “हमारा उद्देश्य समय पर और सुरक्षित काम देना है।”",
+  "photo": ""
+ }
+}

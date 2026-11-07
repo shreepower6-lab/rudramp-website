@@ -1,0 +1,68 @@
+backend:
+  name: github
+  repo: shreepower6-lab/rudramp-website
+  branch: main
+
+media_folder: uploads
+public_folder: /uploads
+
+collections:
+  - name: site
+    label: Website
+    files:
+      - name: content
+        label: Website text and photos
+        file: content.json
+        format: json
+        fields:
+          - label: Top banner
+            name: hero
+            widget: object
+            fields:
+              - { label: Heading (English), name: title_en, widget: string }
+              - { label: Heading (Hindi), name: title_hi, widget: string }
+              - { label: Text (English), name: text_en, widget: text }
+              - { label: Text (Hindi), name: text_hi, widget: text }
+          - label: Numbers strip (years, km, ...)
+            name: stats
+            widget: list
+            fields:
+              - { label: Number, name: value, widget: string }
+              - { label: Label (English), name: label_en, widget: string }
+              - { label: Label (Hindi), name: label_hi, widget: string }
+          - label: Services
+            name: services
+            widget: list
+            fields:
+              - { label: Title (English), name: title_en, widget: string }
+              - { label: Title (Hindi), name: title_hi, widget: string }
+              - { label: Details (English), name: text_en, widget: text }
+              - { label: Details (Hindi), name: text_hi, widget: text }
+          - label: Projects
+            name: projects
+            widget: list
+            fields:
+              - { label: Year or size, name: year, widget: string }
+              - { label: Title (English), name: title_en, widget: string }
+              - { label: Title (Hindi), name: title_hi, widget: string }
+              - { label: Details (English), name: text_en, widget: text }
+              - { label: Details (Hindi), name: text_hi, widget: text }
+          - label: Photo gallery (Our work)
+            name: gallery
+            widget: list
+            required: false
+            fields:
+              - { label: Photo, name: image, widget: image }
+              - { label: Caption (English), name: caption_en, widget: string, required: false }
+              - { label: Caption (Hindi), name: caption_hi, widget: string, required: false }
+          - label: Owner
+            name: owner
+            widget: object
+            fields:
+              - { label: Name (English), name: name_en, widget: string }
+              - { label: Name (Hindi), name: name_hi, widget: string }
+              - { label: Role (English), name: role_en, widget: string }
+              - { label: Role (Hindi), name: role_hi, widget: string }
+              - { label: About (English), name: bio_en, widget: text }
+              - { label: About (Hindi), name: bio_hi, widget: text }
+              - { label: Photo, name: photo, widget: image, required: false }
