@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-l="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rudra Enterprises and Services – Burhanpur</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap">
+<style>
+:root{--saf:#FFC20E;--saf-d:#0B5CAD;--ink:#0B2A4A;--paper:#F4F8FC;--card:#FFFFFF;--line:#CFE0F2;--mute:#4A5E73;--tint:#E4EEF8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--ink:#EAF2FB;--paper:#0C1624;--card:#13233A;--line:#26405F;--mute:#A9BDD3;--tint:#112036;--saf:#FFC83D;--saf-d:#FFD25E;color-scheme:dark}}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 Mukta,"Noto Sans Devanagari",system-ui,sans-serif}
+html[data-l=hi] .en,html[data-l=en] .hi{display:none}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--saf)}
+header .wrap{display:flex;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:18px;display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.mark{width:34px;height:34px;background:var(--saf);color:#0B2A4A;display:grid;place-items:center;font-weight:800;font-size:15px;border-radius:4px}
+nav{display:flex;gap:14px;flex-wrap:wrap;font-size:15px;font-weight:600}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--saf-d)}
+button,.btn{font:600 16px Mukta,"Noto Sans Devanagari",sans-serif;cursor:pointer}
+.lang{border:2px solid var(--saf);background:none;color:var(--ink);padding:2px 12px;border-radius:4px}
+.btn{display:inline-block;background:var(--saf);color:#0B2A4A;border:0;padding:10px 22px;border-radius:4px;text-decoration:none;font-weight:800}
+.btn.alt{background:none;color:var(--ink);border:2px solid var(--ink)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.hero{background:#0B2A4A;color:#F4F8FC;position:relative;overflow:hidden}
+.hero .wrap{padding-top:56px;padding-bottom:0;position:relative;z-index:1}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.1;font-weight:800;margin:0 0 14px;max-width:16em}
+.hero p{max-width:34em;font-size:19px;color:#CFE0F2;margin:0 0 24px}
+.hero .btn.alt{color:#F4F8FC;border-color:#F4F8FC}
+.line{display:block;width:100%;height:150px;margin-top:20px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border-bottom:1px solid var(--line);background:var(--card)}
+.stats div{padding:18px 20px;border-right:1px solid var(--line)}
+.stats b{display:block;font-size:30px;font-weight:800;color:var(--saf-d);line-height:1.1}
+section{padding:56px 0}
+h2{font-size:clamp(26px,4vw,36px);line-height:1.2;margin:0 0 8px;font-weight:800}
+.sub{color:var(--mute);max-width:40em;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--saf);padding:18px 20px;border-radius:4px}
+.card h3{margin:0 0 6px;font-size:20px}.card p{margin:0;color:var(--mute);font-size:16px}
+.alt-bg{background:var(--tint)}
+.proj{display:grid;grid-template-columns:150px 1fr;gap:16px;background:var(--card);border:1px solid var(--line);padding:18px 20px;border-radius:4px;margin-bottom:14px}
+.proj b{font-size:22px;color:var(--saf-d);font-weight:800;line-height:1.2}
+.proj h3{margin:0 0 4px;font-size:19px}.proj p{margin:0;color:var(--mute);font-size:16px}
+@media(max-width:600px){.proj{grid-template-columns:1fr}}
+.owner{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start}
+.ph{width:150px;height:170px;background:var(--tint);border:2px dashed var(--saf);display:grid;place-items:center;font-size:56px;font-weight:800;color:var(--saf-d);border-radius:4px}
+@media(max-width:600px){.owner{grid-template-columns:1fr}}
+.tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.tabs button{background:var(--card);color:var(--ink);border:2px solid var(--line);padding:6px 16px;border-radius:4px}
+.tabs button[aria-pressed=true]{border-color:var(--saf);background:var(--saf);color:#0B2A4A;font-weight:800}
+form{background:var(--card);border:1px solid var(--line);padding:20px;border-radius:4px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+label{display:block;font-size:14px;font-weight:600;color:var(--mute)}
+input,select,textarea{width:100%;font:400 16px Mukta,"Noto Sans Devanagari",sans-serif;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink)}
+.full{grid-column:1/-1}
+.ok{display:none;background:var(--tint);border-left:5px solid var(--saf);padding:12px 16px;margin-top:12px;border-radius:4px}
+.note{font-size:14px;color:var(--mute);margin-top:8px}
+footer{background:#0B2A4A;color:#CFE0F2;padding:36px 0 90px;font-size:15px}
+footer a{color:#F4F8FC}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+footer h4{margin:0 0 6px;color:var(--saf);font-size:17px}
+#ck{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--card);border:2px solid var(--saf);padding:12px 16px;border-radius:4px;z-index:9;display:flex;gap:12px;align-items:center;flex-wrap:wrap;max-width:720px;margin:0 auto;font-size:15px}
+#ck span{flex:1 1 260px}
+.wa{position:fixed;right:16px;bottom:90px;z-index:8;background:#128A43;color:#fff;padding:10px 16px;border-radius:30px;text-decoration:none;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+@media(max-width:600px){
+body{font-size:16px}
+header .wrap{gap:6px;padding-top:8px;padding-bottom:6px}
+.brand{font-size:15px}
+.hero .wrap{padding-top:32px}
+.hero p{font-size:17px}
+.hero .btn{display:block;text-align:center;margin-bottom:10px}
+.stats div{padding:14px;border-bottom:1px solid var(--line)}
+.stats b{font-size:26px}
+section{padding:38px 0}
+.wa{bottom:110px;right:10px;padding:6px 12px;font-size:14px}
+.line{height:100px}
+}
+#mb{display:none;background:var(--saf);color:#0B2A4A;border:0;padding:6px 14px;border-radius:4px;font-weight:800}
+.hero :focus-visible,footer :focus-visible{outline-color:#F4F8FC}
+@media(max-width:760px){#mb{display:inline-block}
+.brand{flex:1;min-width:0}
+nav{display:none;order:3;width:100%;flex-direction:column;gap:0;border-top:1px solid var(--line);margin-top:4px}
+nav.open{display:flex}
+nav a{padding:12px 4px;border-bottom:1px solid var(--line);font-size:17px;color:var(--ink)}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="#top"><span class="mark">RE</span><span>Rudra Enterprises and Services</span></a>
+<nav id="nv" aria-label="Main">
+<a href="#services"><span class="en">Services</span><span class="hi">सेवाएँ</span></a>
+<a href="#projects"><span class="en">Projects</span><span class="hi">प्रोजेक्ट</span></a>
+<a href="#about"><span class="en">About</span><span class="hi">हमारे बारे में</span></a>
+<a href="#quote"><span class="en">Quotation</span><span class="hi">कोटेशन</span></a>
+<a href="#pay"><span class="en">Payment</span><span class="hi">पेमेंट</span></a>
+<a href="#careers"><span class="en">Careers</span><span class="hi">करियर</span></a>
+<a href="#contact"><span class="en">Contact</span><span class="hi">संपर्क</span></a>
+</nav>
+<button class="lang" id="lb" aria-label="Switch language">हिंदी</button>
+<button id="mb" aria-expanded="false" aria-controls="nv"><span class="en">☰ Menu</span><span class="hi">☰ मेन्यू</span></button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<h1><span class="en">From the first pole to the live line.</span><span class="hi">पहले पोल से लेकर चालू लाइन तक।</span></h1>
+<p><span class="en">11 kV and 33 kV line work, transformers up to 5 MVA, solar installation and skilled labour across Madhya Pradesh. Our aim is to deliver on time and safely.</span><span class="hi">पूरे मध्य प्रदेश में 11 kV और 33 kV लाइन का काम, 5 MVA तक के ट्रांसफार्मर, सोलर इंस्टॉलेशन और कुशल लेबर। हमारा उद्देश्य समय पर और सुरक्षित काम देना है।</span></p>
+<a class="btn" href="#quote"><span class="en">Request a quotation</span><span class="hi">कोटेशन माँगें</span></a>
+<a class="btn alt" href="https://wa.me/919669961084"><span class="en">Chat on WhatsApp</span><span class="hi">WhatsApp पर बात करें</span></a>
+<svg class="line" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true">
+<g stroke="#FFC20E" fill="none" stroke-width="2.5"><path d="M0 40 Q125 85 250 40 T500 40 T750 40 T1000 40"/><path d="M0 62 Q125 107 250 62 T500 62 T750 62 T1000 62" opacity=".7"/><path d="M0 84 Q125 129 250 84 T500 84 T750 84 T1000 84" opacity=".45"/></g>
+<g stroke="#CFE0F2" stroke-width="6" stroke-linecap="square"><path d="M250 20V150M500 20V150M750 20V150M0 20V150M1000 20V150"/></g>
+<g stroke="#CFE0F2" stroke-width="5"><path d="M228 40H272M478 40H522M728 40H772"/></g>
+</svg>
+</div></div>
+
+<div class="stats">
+<div><b>4+</b><span class="en">years of experience</span><span class="hi">साल का अनुभव</span></div>
+<div><b>60 km</b><span class="en">11 kV and 33 kV lines built</span><span class="hi">11 kV और 33 kV लाइन</span></div>
+<div><b>50</b><span class="en">transformers installed</span><span class="hi">ट्रांसफार्मर लगाए</span></div>
+<div><b>53</b><span class="en">engineers, supervisors and workers</span><span class="hi">इंजीनियर, सुपरवाइज़र और कारीगर</span></div>
+</div>
+
+<section id="services"><div class="wrap">
+<h2><span class="en">What we do</span><span class="hi">हमारी सेवाएँ</span></h2>
+<p class="sub"><span class="en">Government departments, contractor companies, farmers and homes: we take the work from site to switch-on.</span><span class="hi">सरकारी विभाग, ठेकेदार कंपनियाँ, किसान और घर: हम काम को शुरू से चालू होने तक पूरा करते हैं।</span></p>
+<div class="grid">
+<div class="card"><h3><span class="en">11 kV line work</span><span class="hi">11 kV लाइन का काम</span></h3><p><span class="en">Pole erection, line laying, testing and charging, with DTR installation, for the full job.</span><span class="hi">पोल लगाना, लाइन बिछाना, टेस्टिंग और लाइन चालू करना, DTR लगाने सहित पूरा काम।</span></p></div>
+<div class="card"><h3><span class="en">Transformers and DTR</span><span class="hi">ट्रांसफार्मर और DTR</span></h3><p><span class="en">25, 63, 100, 200 and 325 kVA, and up to 5 MVA.</span><span class="hi">25, 63, 100, 200 और 325 kVA, और 5 MVA तक।</span></p></div>
+<div class="card"><h3><span class="en">Labour contractor</span><span class="hi">लेबर कॉन्ट्रैक्टर</span></h3><p><span class="en">Work for the electricity department and contractor companies on RDSS and other schemes of the Purv Kshetra distribution company.</span><span class="hi">बिजली विभाग और ठेकेदार कंपनियों के लिए RDSS और पूर्व क्षेत्र विद्युत वितरण कंपनी की दूसरी योजनाओं का काम।</span></p></div>
+<div class="card"><h3><span class="en">Labour supply</span><span class="hi">लेबर सप्लाई</span></h3><p><span class="en">Skilled and unskilled workers: linemen, helpers and electricians, 50 to 100 at a time.</span><span class="hi">स्किल्ड और अनस्किल्ड लेबर: लाइनमैन, हेल्पर, इलेक्ट्रीशियन, एक बार में 50 से 100 तक।</span></p></div>
+<div class="card"><h3><span class="en">Solar installation</span><span class="hi">सोलर इंस्टॉलेशन</span></h3><p><span class="en">Systems from 3 kW to 50 kW for homes, farms and businesses.</span><span class="hi">घर, खेत और व्यवसाय के लिए 3 kW से 50 kW तक के सिस्टम।</span></p></div>
+<div class="card"><h3><span class="en">Farmers and individuals</span><span class="hi">किसान और निजी उपभोक्ता</span></h3><p><span class="en">Two poles, a line shift or a transformer on your own farm, plus maintenance.</span><span class="hi">दो पोल, लाइन शिफ्टिंग या अपने खेत में ट्रांसफार्मर, और मेंटेनेंस।</span></p></div>
+</div></div></section>
+
+<section id="projects" class="alt-bg"><div class="wrap">
+<h2><span class="en">Completed projects</span><span class="hi">पूरे किए गए प्रोजेक्ट</span></h2>
+<p class="sub"><span class="en">Work done for Vindhya Telelinks Limited and under Purv Kshetra Vidyut Vitaran Company Limited.</span><span class="hi">Vindhya Telelinks Limited के लिए और पूर्व क्षेत्र विद्युत वितरण कंपनी लिमिटेड के अंतर्गत किया गया काम।</span></p>
+<div class="proj"><b>2022-23<br>2024</b><div><h3><span class="en">DDUGJY (Deen Dayal Upadhyaya Gram Jyoti Yojana)</span><span class="hi">DDUGJY (दीनदयाल उपाध्याय ग्राम ज्योति योजना)</span></h3><p><span class="en">Umaria, Shahdol and Anuppur districts: 50 km of 11 kV line, 10 km of 33 kV line, 50 transformers and 2,000 meters installed.</span><span class="hi">उमरिया, शहडोल और अनूपपुर जिले: 50 किमी 11 kV लाइन, 10 किमी 33 kV लाइन, 50 ट्रांसफार्मर और 2,000 मीटर लगाए गए।</span></p></div></div>
+<div class="proj"><b>2025</b><div><h3><span class="en">RDSS project, Burhanpur</span><span class="hi">RDSS प्रोजेक्ट, बुरहानपुर</span></h3><p><span class="en">Erection, testing and commissioning of 11 kV and 33 kV material for Vindhya Telelinks Limited.</span><span class="hi">Vindhya Telelinks Limited के लिए 11 kV और 33 kV सामग्री का इरेक्शन, टेस्टिंग और कमीशनिंग।</span></p></div></div>
+<div class="proj"><b>3–10 kW</b><div><h3><span class="en">Solar installations</span><span class="hi">सोलर इंस्टॉलेशन</span></h3><p><span class="en">About 15 customers in Umaria, Burhanpur and Khandwa districts.</span><span class="hi">उमरिया, बुरहानपुर और खंडवा जिलों में लगभग 15 ग्राहक।</span></p></div></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2><span class="en">About us</span><span class="hi">हमारे बारे में</span></h2>
+<p class="sub"><span class="en">Rudra Enterprises and Services is a partnership firm in Burhanpur, founded in June 2022. We hold an A-class electrical license and a GST registration.</span><span class="hi">रुद्रा एंटरप्राइजेस एंड सर्विसेज़ बुरहानपुर की एक पार्टनरशिप फर्म है, जिसकी स्थापना जून 2022 में हुई। हमारे पास ए-क्लास इलेक्ट्रिकल लाइसेंस और GST पंजीकरण है।</span></p>
+<div class="owner"><div class="ph" aria-label="Photo to be added">R</div>
+<div><h3 style="margin:0"><span class="en">Rahul Upadhyay</span><span class="hi">राहुल उपाध्याय</span></h3><div style="color:var(--saf-d);font-weight:800"><span class="en">Partner and CEO</span><span class="hi">पार्टनर एवं सीईओ</span></div>
+<p><span class="en">Rahul Upadhyay holds an MBA in Finance and has 7 years of experience in electrical contracting. Under his leadership the company has worked on government schemes across Madhya Pradesh. “Our aim is to deliver on time and safely.”</span><span class="hi">राहुल उपाध्याय ने एमबीए (फाइनेंस) किया है और उन्हें बिजली ठेकेदारी में 7 साल का अनुभव है। उनके नेतृत्व में कंपनी ने पूरे मध्य प्रदेश में सरकारी योजनाओं पर काम किया है। “हमारा उद्देश्य समय पर और सुरक्षित काम देना है।”</span></p></div></div>
+<div class="grid" style="margin-top:28px">
+<div class="card"><h3><span class="en">Safety first</span><span class="hi">सुरक्षा पहले</span></h3><p><span class="en">All employees are insured and trained. Every worker has a safety kit: helmet, safety belt, gloves and shoes.</span><span class="hi">सभी कर्मचारियों का बीमा और सुरक्षा प्रशिक्षण है। हर कर्मचारी के पास सेफ्टी किट है: हेलमेट, सेफ्टी बेल्ट, दस्ताने, जूते।</span></p></div>
+<div class="card"><h3><span class="en">Our equipment</span><span class="hi">हमारे उपकरण</span></h3><p><span class="en">A crane, two tractors, a 407 vehicle and testing equipment for 11 kV lines.</span><span class="hi">एक क्रेन, दो ट्रैक्टर, एक 407 वाहन और 11 kV लाइन की टेस्टिंग के उपकरण।</span></p></div>
+<div class="card"><h3><span class="en">Our team</span><span class="hi">हमारी टीम</span></h3><p><span class="en">40 workers, 5 engineers and 8 supervisors.</span><span class="hi">40 कारीगर, 5 इंजीनियर और 8 सुपरवाइज़र।</span></p></div>
+</div></div></section>
+
+<section id="quote" class="alt-bg"><div class="wrap">
+<h2><span class="en">Request a quotation</span><span class="hi">कोटेशन माँगें</span></h2>
+<p class="sub"><span class="en">We reply within 24 hours, with the quotation sent as a PDF.</span><span class="hi">हम 24 घंटे में जवाब देते हैं, और कोटेशन PDF में भेजी जाती है।</span></p>
+<div class="tabs"><button data-t="c" aria-pressed="true"><span class="en">I need work done</span><span class="hi">मुझे काम करवाना है</span></button><button data-t="v" aria-pressed="false"><span class="en">I am a vendor or supplier</span><span class="hi">मैं वेंडर / सप्लायर हूँ</span></button></div>
+<form id="qc" class="qf">
+<div><label><span class="en">Name</span><span class="hi">नाम</span></label><input required></div>
+<div><label><span class="en">Company (optional)</span><span class="hi">कंपनी (वैकल्पिक)</span></label><input></div>
+<div><label><span class="en">Mobile</span><span class="hi">मोबाइल</span></label><input type="tel" required></div>
+<div><label>Email</label><input type="email" required></div>
+<div><label><span class="en">Service</span><span class="hi">सेवा</span></label><select><option>11 kV</option><option>Transformer / DTR</option><option>Labour contractor</option><option>Labour supply</option><option>Solar</option><option>Other</option></select></div>
+<div><label><span class="en">Work location</span><span class="hi">काम का स्थान</span></label><input></div>
+<div><label><span class="en">Budget (optional)</span><span class="hi">बजट (वैकल्पिक)</span></label><input></div>
+<div><label><span class="en">Drawing or file</span><span class="hi">नक्शा / फाइल</span></label><input type="file" accept=".pdf,image/*"></div>
+<div class="full"><label><span class="en">Work details</span><span class="hi">काम का विवरण</span></label><textarea rows="3"></textarea></div>
+<div class="full"><button class="btn" type="submit"><span class="en">Send request</span><span class="hi">अनुरोध भेजें</span></button></div>
+</form>
+<form id="qv" class="qf" hidden>
+<div><label><span class="en">Name</span><span class="hi">नाम</span></label><input required></div>
+<div><label><span class="en">Company name</span><span class="hi">कंपनी का नाम</span></label><input required></div>
+<div><label><span class="en">Mobile</span><span class="hi">मोबाइल</span></label><input type="tel" required></div>
+<div><label>Email</label><input type="email" required></div>
+<div class="full"><label><span class="en">What do you supply (goods or service)?</span><span class="hi">आप क्या सप्लाई करते हैं (सामान / सेवा)?</span></label><input required></div>
+<div class="full"><label><span class="en">Upload your quotation</span><span class="hi">अपनी कोटेशन अपलोड करें</span></label><input type="file"></div>
+<div class="full"><button class="btn" type="submit"><span class="en">Send quotation</span><span class="hi">कोटेशन भेजें</span></button></div>
+</form>
+<div class="ok" id="qok" role="status"><span class="en">Thank you! We have received your request and will contact you soon.</span><span class="hi">धन्यवाद! आपका अनुरोध मिल गया है। हम जल्द ही आपसे संपर्क करेंगे।</span></div>
+</div></section>
+
+<section id="pay"><div class="wrap">
+<h2><span class="en">Pay online</span><span class="hi">ऑनलाइन पेमेंट</span></h2>
+<p class="sub"><span class="en">Pay the advance from your quotation by UPI, card or net banking. A GST invoice is available after payment. No refund once an agreement is signed.</span><span class="hi">अपनी कोटेशन के अनुसार एडवांस UPI, कार्ड या नेट बैंकिंग से दें। भुगतान के बाद GST इनवॉइस मिल सकता है। एग्रीमेंट साइन होने के बाद रिफंड नहीं होगा।</span></p>
+<form id="pf">
+<div><label><span class="en">Name</span><span class="hi">नाम</span></label><input required></div>
+<div><label><span class="en">Mobile</span><span class="hi">मोबाइल</span></label><input type="tel" required></div>
+<div><label><span class="en">City you are paying from</span><span class="hi">आप कहाँ से पेमेंट कर रहे हैं</span></label><input required></div>
+<div><label><span class="en">Quotation or invoice no.</span><span class="hi">कोटेशन / इनवॉइस नंबर</span></label><input></div>
+<div><label><span class="en">Amount (₹)</span><span class="hi">राशि (₹)</span></label><input type="number" min="1" required></div>
+<div><label><span class="en">Payment is for</span><span class="hi">किस चीज़ का पेमेंट</span></label><input required></div>
+<div class="full"><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" style="width:auto"><span class="en">I need a GST invoice</span><span class="hi">मुझे GST इनवॉइस चाहिए</span></label></div>
+<div class="full"><button class="btn" type="submit"><span class="en">Pay now</span><span class="hi">अभी भुगतान करें</span></button><div class="note"><span class="en">Design preview: the secure Razorpay checkout connects here.</span><span class="hi">डिज़ाइन पूर्वावलोकन: यहाँ Razorpay का सुरक्षित पेमेंट जुड़ेगा।</span></div></div>
+</form>
+</div></section>
+
+<section id="careers" class="alt-bg"><div class="wrap">
+<h2><span class="en">Careers</span><span class="hi">करियर</span></h2>
+<p class="sub"><span class="en">Looking for work as a lineman, helper, electrician, engineer or supervisor? Apply here.</span><span class="hi">लाइनमैन, हेल्पर, इलेक्ट्रीशियन, इंजीनियर या सुपरवाइज़र के रूप में काम चाहिए? यहाँ आवेदन करें।</span></p>
+<form id="cf">
+<div><label><span class="en">Name</span><span class="hi">नाम</span></label><input required></div>
+<div><label><span class="en">Mobile</span><span class="hi">मोबाइल</span></label><input type="tel" required></div>
+<div><label><span class="en">Work you do</span><span class="hi">आप क्या काम करते हैं</span></label><select><option>Lineman</option><option>Helper</option><option>Electrician</option><option>Engineer</option><option>Supervisor</option><option>Other</option></select></div>
+<div><label><span class="en">Years of experience</span><span class="hi">अनुभव (साल)</span></label><input type="number" min="0"></div>
+<div class="full"><button class="btn" type="submit"><span class="en">Apply</span><span class="hi">आवेदन करें</span></button></div>
+</form>
+<div class="ok" id="cok" role="status"><span class="en">Thank you! We have received your application.</span><span class="hi">धन्यवाद! आपका आवेदन मिल गया है।</span></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2><span class="en">Contact us</span><span class="hi">संपर्क करें</span></h2>
+<p class="sub"><span class="en">Write to us by email or message us on WhatsApp.</span><span class="hi">हमें ईमेल करें या WhatsApp पर संदेश भेजें।</span></p>
+<a class="btn" href="https://wa.me/919669961084">WhatsApp</a> <a class="btn alt" href="mailto:rudraenterprisesservices@outlook.com">rudraenterprisesservices@outlook.com</a>
+</div></section>
+</main>
+
+<footer><div class="wrap cols">
+<div><h4>Rudra Enterprises and Services</h4>42 Malviya Ward No. 16, Itwara,<br>Burhanpur (M.P.) – 450331</div>
+<div><h4><span class="en">Office hours</span><span class="hi">कार्यालय का समय</span></h4><span class="en">Monday to Saturday, 10 AM to 6 PM. Closed on some public holidays.</span><span class="hi">सोमवार से शनिवार, सुबह 10 से शाम 6 बजे। कुछ सार्वजनिक छुट्टियों पर बंद।</span></div>
+<div><h4>GST</h4>23ABEFR3974R1ZH<br><a href="#privacy" id="pl"><span class="en">Privacy policy</span><span class="hi">प्राइवेसी पॉलिसी</span></a><br><span class="en">Visitors:</span><span class="hi">विज़िटर:</span> <b id="vc">–</b></div>
+<div id="privacy" class="full" style="grid-column:1/-1;font-size:14px"><span class="en">We use the details you enter in our forms only to reply to you, process your payment and consider your application. We do not sell your information. Our website counts visitors using cookies.</span><span class="hi">आप फॉर्म में जो जानकारी भरते हैं, उसका उपयोग हम सिर्फ़ आपको जवाब देने, पेमेंट पूरा करने और आपके आवेदन पर विचार करने के लिए करते हैं। हम आपकी जानकारी बेचते नहीं हैं। वेबसाइट कुकी से विज़िटर गिनती करती है।</span></div>
+</div></footer>
+
+<a class="wa" href="https://wa.me/919669961084" aria-label="WhatsApp">WhatsApp</a>
+<div id="ck" role="dialog" aria-label="Cookies"><span><span class="en">We use cookies to count visitors and improve this website.</span><span class="hi">हम विज़िटर गिनने और वेबसाइट बेहतर बनाने के लिए कुकी का उपयोग करते हैं।</span></span><button class="btn" id="ckb"><span class="en">Accept</span><span class="hi">ठीक है</span></button></div>
+
+<script>
+var h=document.documentElement,lb=document.getElementById('lb');
+lb.onclick=function(){var hi=h.dataset.l==='en';h.dataset.l=hi?'hi':'en';h.lang=hi?'hi':'en';lb.textContent=hi?'English':'हिंदी'};
+document.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});document.getElementById('qc').hidden=b.dataset.t!=='c';document.getElementById('qv').hidden=b.dataset.t!=='v';document.getElementById('qok').style.display='none'}});
+function demo(id,ok){document.getElementById(id).addEventListener('submit',function(e){e.preventDefault();var o=document.getElementById(ok);o.style.display='block';this.reset()})}
+demo('qc','qok');demo('qv','qok');demo('cf','cok');
+document.getElementById('pf').addEventListener('submit',function(e){e.preventDefault()});
+document.getElementById('ckb').onclick=function(){document.getElementById('ck').style.display='none'};
+var mb=document.getElementById('mb'),nv=document.getElementById('nv');mb.onclick=function(){var o=nv.classList.toggle('open');mb.setAttribute('aria-expanded',o)};nv.onclick=function(e){if(e.target.closest('a')){nv.classList.remove('open');mb.setAttribute('aria-expanded','false')}};
+</script>
+</body>
+</html>
