@@ -2,14 +2,14 @@
 <html lang="en" data-l="en">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rudra Enterprises and Services – Burhanpur</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&display=swap">
 <style>
 :root{--saf:#E8700A;--saf-d:#B85500;--ink:#2A1F16;--paper:#FFF8EE;--card:#FFFFFF;--line:#EAD9C2;--mute:#6B5B4B;--tint:#FDE9CF;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#F7EBDA;--paper:#1C1510;--card:#271D15;--line:#443527;--mute:#C2AF99;--tint:#33230F;--saf:#F28A2E;--saf-d:#F5A04F;color-scheme:dark}}
-:root[data-theme="dark"]{--ink:#F7EBDA;--paper:#1C1510;--card:#271D15;--line:#443527;--mute:#C2AF99;--tint:#33230F;--saf:#F28A2E;--saf-d:#F5A04F;color-scheme:dark}
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--ink:#F7EBDA;--paper:#1C1510;--card:#271D15;--line:#4A3A2A;--mute:#CDBBA5;--tint:#2F2116;--saf:#F28A2E;--saf-d:#F5A04F;color-scheme:dark}}
 html{scroll-padding-top:70px;scroll-behavior:smooth}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 Mukta,"Noto Sans Devanagari",system-ui,sans-serif}
@@ -27,8 +27,7 @@ button,.btn{font:600 16px Mukta,"Noto Sans Devanagari",sans-serif;cursor:pointer
 .btn{display:inline-block;background:var(--saf);color:#1C1510;border:0;padding:10px 22px;border-radius:4px;text-decoration:none;font-weight:800}
 .btn.alt{background:none;color:var(--ink);border:2px solid var(--ink)}
 :focus-visible{outline:3px solid var(--ink);outline-offset:2px}
-.hero{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
-:root:not([data-theme="light"]) .hero{--hbg:#2A1F16}
+.hero{background:#2A1F16;color:#FFF8EE;position:relative;overflow:hidden}
 .hero .wrap{padding-top:56px;padding-bottom:0;position:relative;z-index:1}
 .hero h1{font-size:clamp(34px,6vw,60px);line-height:1.1;font-weight:800;margin:0 0 14px;max-width:16em}
 .hero p{max-width:34em;font-size:19px;color:#EAD9C2;margin:0 0 24px}
@@ -60,19 +59,39 @@ input,select,textarea{width:100%;font:400 16px Mukta,"Noto Sans Devanagari",sans
 .full{grid-column:1/-1}
 .ok{display:none;background:var(--tint);border-left:5px solid var(--saf);padding:12px 16px;margin-top:12px;border-radius:4px}
 .note{font-size:14px;color:var(--mute);margin-top:8px}
-footer{background:var(--ink);color:#EAD9C2;padding:36px 0 90px;font-size:15px}
+footer{background:#2A1F16;color:#EAD9C2;padding:36px 0 90px;font-size:15px}
 footer a{color:#FFF8EE}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
 footer h4{margin:0 0 6px;color:var(--saf);font-size:17px}
 #ck{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--card);border:2px solid var(--saf);padding:12px 16px;border-radius:4px;z-index:9;display:flex;gap:12px;align-items:center;flex-wrap:wrap;max-width:720px;margin:0 auto;font-size:15px}
 #ck span{flex:1 1 260px}
 .wa{position:fixed;right:16px;bottom:90px;z-index:8;background:#1FA855;color:#fff;padding:10px 16px;border-radius:30px;text-decoration:none;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+@media(max-width:600px){
+body{font-size:16px}
+header .wrap{gap:6px;padding-top:8px;padding-bottom:6px}
+.brand{font-size:15px}
+.hero .wrap{padding-top:32px}
+.hero p{font-size:17px}
+.hero .btn{display:block;text-align:center;margin-bottom:10px}
+.stats div{padding:14px;border-bottom:1px solid var(--line)}
+.stats b{font-size:26px}
+section{padding:38px 0}
+.wa{bottom:110px;right:10px;padding:6px 12px;font-size:14px}
+.line{height:100px}
+}
+#mb{display:none;background:var(--saf);color:#1C1510;border:0;padding:6px 14px;border-radius:4px;font-weight:800}
+.hero :focus-visible,footer :focus-visible{outline-color:#FFF8EE}
+@media(max-width:760px){#mb{display:inline-block}
+.brand{flex:1;min-width:0}
+nav{display:none;order:3;width:100%;flex-direction:column;gap:0;border-top:1px solid var(--line);margin-top:4px}
+nav.open{display:flex}
+nav a{padding:12px 4px;border-bottom:1px solid var(--line);font-size:17px;color:var(--ink)}}
 </style>
 </head>
 <body>
 <header><div class="wrap">
 <a class="brand" href="#top"><span class="mark">RE</span><span>Rudra Enterprises and Services</span></a>
-<nav aria-label="Main">
+<nav id="nv" aria-label="Main">
 <a href="#services"><span class="en">Services</span><span class="hi">सेवाएँ</span></a>
 <a href="#projects"><span class="en">Projects</span><span class="hi">प्रोजेक्ट</span></a>
 <a href="#about"><span class="en">About</span><span class="hi">हमारे बारे में</span></a>
@@ -82,6 +101,7 @@ footer h4{margin:0 0 6px;color:var(--saf);font-size:17px}
 <a href="#contact"><span class="en">Contact</span><span class="hi">संपर्क</span></a>
 </nav>
 <button class="lang" id="lb" aria-label="Switch language">हिंदी</button>
+<button id="mb" aria-expanded="false" aria-controls="nv"><span class="en">☰ Menu</span><span class="hi">☰ मेन्यू</span></button>
 </div></header>
 
 <main id="top">
@@ -217,6 +237,7 @@ function demo(id,ok){document.getElementById(id).addEventListener('submit',funct
 demo('qc','qok');demo('qv','qok');demo('cf','cok');
 document.getElementById('pf').addEventListener('submit',function(e){e.preventDefault()});
 document.getElementById('ckb').onclick=function(){document.getElementById('ck').style.display='none'};
+var mb=document.getElementById('mb'),nv=document.getElementById('nv');mb.onclick=function(){var o=nv.classList.toggle('open');mb.setAttribute('aria-expanded',o)};nv.onclick=function(e){if(e.target.closest('a')){nv.classList.remove('open');mb.setAttribute('aria-expanded','false')}};
 </script>
 </body>
 </html>
